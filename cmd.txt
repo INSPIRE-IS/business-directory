@@ -1,0 +1,222 @@
+How to use
+
+INSERT INTO `setups`(`name`) VALUES ('info'),('about'),('welcome'),('privacy'),('terms'),('facebook'),('youtube'),('twitter'),('linkedin'),('instahram'),('whatsapp'),('telegram');
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+[2022-07-12T19:42:37.055Z] > git config --get-all user.name [170ms]
+[2022-07-12T19:42:38.731Z] > git ls-files --stage -- C:\xampp\htdocs\projects\captivemarketing.inspireonline.co.za\cmd.txt [157ms]
+[2022-07-12T19:42:38.819Z] > git cat-file -s 8f07e2855ec6d91f64c6a339cc68440aa24a160f [80ms]
+[2022-07-12T19:42:39.016Z] > git show --textconv :cmd.txt [178ms]
+[2022-07-12T19:42:48.250Z] > git status -z -uall [221ms]
+[2022-07-12T19:42:48.379Z] > git symbolic-ref --short HEAD [119ms]
+[2022-07-12T19:42:48.490Z] > git ls-files --stage -- C:\xampp\htdocs\projects\captivemarketing.inspireonline.co.za\cmd.txt [156ms]
+[2022-07-12T19:42:48.532Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [148ms]
+[2022-07-12T19:42:48.749Z] > git cat-file -s 8f07e2855ec6d91f64c6a339cc68440aa24a160f [253ms]
+[2022-07-12T19:42:48.750Z] > git remote --verbose [206ms]
+[2022-07-12T19:42:48.759Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [220ms]
+[2022-07-12T19:42:56.568Z] > git config --get commit.template [328ms]
+[2022-07-12T19:42:56.575Z] > git show --textconv :cmd.txt [346ms]
+
+
+<a href="https://www.freepik.com/vectors/abstract-background">Abstract background vector created by rawpixel.com - www.freepik.com</a>
+
+https://github.com/LaravelDaily/QuickAdminPanel-Classifieds-Directory
+    Clone the repository with git clone
+    Copy .env.example file to .env and edit database credentials there
+    Run
+        composer install
+        php artisan key:generate
+        php artisan migrate --seed (it has some seeded data for your testing)
+        php artisan migrate:fresh -- seed
+        php artisan make:factory Posts
+        php artisan db:seed
+        php artisan serve
+        That's it: launch the main URL.
+    You can login to adminpanel by going go /login URL and login with credentials
+    admin@admin.com - password
+composer update
+    /clear-cache
+composer require laravel/ui
+php artisan ui --help
+php artisan ui bootstrap --auth  //vue
+npm install
+npm run dev
+
+composer why stripe/stripe-php
+composer remove laravel/cashier
+composer remove stripe/stripe-php
+
+composer dump-autoload
+
+php artisan storage:link
+php artisan migrate:fresh --seed
+php artisan passport:install --force
+
+--php artisan passport:client --personal
+php artisan passport:keys --force
+
+php artisan config:clear
+php artisan cache:clear
+php artisan config:cache
+php artisan optimize
+
+composer install
+composer dump-autoload
+
+php artisan serve
+
+php artisan migrate:rollback //last migration
+php artisan migrate
+php artisan config:clear // .env
+Class App\Http\Controllers\API\AuthApiController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\AuthApiController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\BaseController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\BaseController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\CategoryController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\CategoryController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\MemberApiController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\MemberApiController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\MemberController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\MemberController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\V1\CategoryController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\V1\CategoryController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\V1\CompanyController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\V1\CompanyController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Controllers\API\V1\NotificationsController located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Controllers\Api\V1\NotificationsController.php does not comply with psr-4 autoloading standard. Skipping.
+Class App\Http\Requests\StoreDelightfulRequest located in F:/xampp/htdocs/projects/inspire/afrihost/captivemarketing.inspireonline.co.za/app\Http\Requests\StoreDelightfulRequest1.php does not comply with psr-4 autoloading standard. Skipping.
+php artisan route:list
+
+php artisan list
+php artisan make:resource Admin/CompanyResource
+php artisan make:factory
+php artisan migrate
+php artisan db:seed
+php artisan migrate:fresh --seed
+php artisan db:seed --class=CategoriesTableSeeder
+php artisan db:seed --class=MemberCompanyTableSeeder
+php artisan make:migration create_role_user_table
+//php artisan make:seeder OAuthClientTableSeeder
+//php artisan make:seeder OAuthPersonalAccessClientsTableSeeder
+
+php artisan make:seed RolesTableSeeder
+php artisan make:controller NameController
+php artisan make:controller Admin/EmailController
+//php artisan make:controller SendEmailController
+
+php artisan make:controller \\Admin\\UsersController -r -mUser namespace admin(admin folder) resourcController attach model
+php artisan make:controller PhotoController --resource
+php artisan make:controller Admin/MessageController -r -mMessage
+
+php artisan make:model Member --migration
+php artisan make:controller Admin/MemberController -r -mMember
+php artisan make:controller Form/MemberController -r -mMember
+php artisan make:controller Form/SigninController -r -mUser
+php artisan make:seeder MemberTableSeeder
+php artisan make:controller API/MemberController -r -mMember --api
+
+php artisan make:model Click --migration
+php artisan make:migration create_documents_company_pivot_table
+
+php artisan make:model City --migration
+php artisan make:controller Admin/CityController -r -mCity
+
+php artisan make:model Category --migration
+php artisan make:controller Admin/CategoryController -r -mCategory
+php artisan make:controller API/V1/CategoryController -mCompany --api
+php artisan make:seeder CategoryTableSeeder
+
+php artisan make:model SubCategory --migration
+php artisan make:controller Admin/SubCategoryController -r -mSubCategory
+php artisan make:seeder SubCategoryTableSeeder
+php artisan make:model SubCategoriesCompany
+php artisan make:model DocumentsCompany
+
+php artisan make:model Company --migration
+php artisan make:controller Admin/CompanyController -r -mCompany
+php artisan make:controller Form/CompanyController -r -mCompany
+php artisan make:controller Frontend/CompanyController -r -mCompany
+php artisan make:seeder CompanyTableSeeder
+php artisan make:controller API/V1/CompanyController -mCompany --api
+
+php artisan make:model Setup --migration
+php artisan make:controller Admin/SetupController -r -mSetup
+php artisan make:seeder SetupTableSeeder
+php artisan make:controller API/V1/SetupController -mSetup --api
+
+php artisan make:model MemberCompany --migration
+php artisan make:migration create_member_company_pivot_table --create=member_company
+php artisan make:seeder MemberCompanyTableSeeder
+php artisan make:seeder CityTableSeeder
+
+php artisan make:model Document --migration
+php artisan make:controller Admin/DocumentController -r -mDocument
+php artisan make:migration create_member_company_pivot_table --create=member_company
+php artisan make:seeder DocumentsTableSeeder
+
+
+php artisan make:migration create_sub_categories_company_pivot_table
+php artisan make:migration create_documents_company_pivot_table
+
+
+php artisan make:model Notification --migration
+php artisan make:controller Admin/NotificationsController -r -mNotification
+php artisan make:controller API/V1/NotificationsController -mNotification --api
+
+php artisan make:model Account --migration
+php artisan make:controller Admin/AccountsController -r -mAccount
+php artisan make:controller API/V1/AccountsController -mAccount --api
+
+
+php artisan make:model SectorClassification --migration
+php artisan make:controller Admin/SectorClassificationController -r -mSectorClassification
+php artisan make:seeder SectorClassificationsTableSeeder
+
+php artisan make:model IndustryClassification --migration
+php artisan make:controller Admin/IndustryClassificationController -r -mIndustryClassification
+php artisan make:seeder IndustryClassificationsTableSeeder
+
+php artisan make:model TypeBusiness --migration
+php artisan make:controller Admin/TypeBusinessController -r -mTypeBusiness
+php artisan make:seeder TypeBusinessesTableSeeder
+
+php artisan make:migration create_messages_table
+php artisan make:model Agent --migration
+php artisan make:controller Admin/AgentController -r
+
+php artisan make:model AgentLogs --migration
+php artisan make:controller Admin/AgentLogsController -r
+
+php artisan make:seeder CategoriesTableSeeder
+
+
+//php artisan make:controller API/PhotoController --api
+php artisan make:controller API/MemberController -r -mMember --api
+? is this business ni model yet php artisan make:controller API/CategoryController -r -mCategory --api
+php artisan make:controller API/NotificationController -r -mNotification --api
+php artisan make:controller API/TodoController -r -mTodo
+php artisan make:model Message --migration --controller --api
+php artisan make:controller API/BusinessController -r -mBusiness
+php artisan make:controller API/MemberController -r -mMember --api
+
+
+php artisan make:controller API/SendController
+php artisan make:controller API/CategoryController
+
+or
+php artisan make:model Dog --migration --controller --api
+
+php artisan make:migration create_role_user_table
+DB_DATABASE=/host/xampp/htdocs/projects/OPIT/2020/Platform4U/platform-mdb/login/database/db.sqlite
+
+
+php artisan make:model ModelName -m creates the model and migration
+
+unit test //single function
+feature or intergration test //multiple components tested together functions
+system testing
+acceptance testing
+php artisan make:test LoginPageTest //creates a feature test add --unit //creates a unit test //testNameTest "Test key word"
+php artisan make:test UserRedirectedNoLoginTest
+./vendor/bin/phpunit //unless installed globally just call phpunit
+
+https://www.facebook.com/platform4u
+https://www.youtube.com/platform4u
+https://www.twitter.com/platform4u
+https://www.linkedin.com/platform4u
+https://www.facebook.com/webtrickshome
+

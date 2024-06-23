@@ -1,0 +1,174 @@
+composer create-project --prefer-dist laravel/laravel:8.16.1 blog
+
+composer require laravel/ui
+php artisan ui --help
+php artisan ui bootstrap --auth  //vue
+npm install
+npm run dev
+composer install
+
+composer require "spatie/laravel-medialibrary:^8"
+php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
+php artisan migrate
+APP_URL = http://localhost:8000 // .env
+php artisan storage:link
+php artisan serve
+
+composer dump-autoload
+
+php artisan storage:link
+php artisan migrate:fresh --seed
+composer require laravel/passport
+php artisan migrate 
+php artisan passport:install
+php artisan passport:install --force
+
+--php artisan passport:client --personal
+php artisan passport:keys --force
+
+php artisan config:clear
+php artisan cache:clear
+php artisan config:cache
+
+composer dump-autoload
+
+php artisan serve
+
+php artisan migrate:rollback //last migration
+php artisan migrate
+
+php artisan make:model SubCategoriesCompany
+
+php artisan make:model SubCategory --migration
+php artisan make:controller Admin/SubCategoryController -r -mSubCategory
+php artisan make:seeder SubCategoryTableSeeder
+
+php artisan make:controller API/V1/CategoryController -mCompany --api
+php artisan make:Resource Admin/Account
+
+php artisan make:Request MassDestroyAccount
+php artisan make:Request StoreAccount
+php artisan make:Request UpdateCity
+php artisan make:Request DeleteCity
+
+
+
+-- AuditLog
+php artisan make:model AuditLog --migration
+php artisan make:controller Admin/AuditLogController -r -mAuditLog
+-- php artisan make:seeder AuditLogTableSeeder
+
+php artisan make:controller API/V1/AuditLogController -mAuditLog --api
+php artisan make:Resource Admin/AuditLog
+
+php artisan make:Request MassDestroyAuditLog
+php artisan make:Request StoreAuditLog
+php artisan make:Request UpdateAuditLog
+php artisan make:Request DeleteAuditLog
+
+-- Permission
+php artisan make:model Permission --migration
+php artisan make:controller Admin/PermissionController -r -mPermission
+php artisan make:seeder PermissionTableSeeder
+
+php artisan make:controller API/V1/PermissionController -mPermission --api
+php artisan make:Resource Admin/Permission
+
+php artisan make:Request MassDestroyPermission
+php artisan make:Request StorePermission
+php artisan make:Request UpdatePermission
+php artisan make:Request DeletePermission
+
+-- Role
+php artisan make:model Role --migration
+php artisan make:controller Admin/RoleController -r -mRole
+php artisan make:seeder RoleTableSeeder
+
+php artisan make:controller API/V1/RoleController -mRole --api
+php artisan make:Resource Admin/Role
+
+php artisan make:Request MassDestroyRole
+php artisan make:Request StoreRole
+php artisan make:Request UpdateRole
+php artisan make:Request DeleteRole
+
+-- User
+php artisan make:model User --migration
+php artisan make:controller Admin/UserController -r -mUser
+php artisan make:seeder UserTableSeeder
+
+php artisan make:controller API/V1/UserController -mUser --api
+php artisan make:Resource Admin/User
+
+php artisan make:Request MassDestroyUser
+php artisan make:Request StoreUser
+php artisan make:Request UpdateUser
+php artisan make:Request DeleteUser
+
+-- City
+php artisan make:model City --migration
+php artisan make:controller Admin/CityController -r -mCity
+php artisan make:seeder CityTableSeeder
+
+php artisan make:controller API/V1/CityController -mCity --api
+php artisan make:Resource Admin/City
+
+php artisan make:Request MassDestroyCity
+php artisan make:Request StoreCity
+php artisan make:Request UpdateCity
+php artisan make:Request DeleteCity
+
+-- SectorClassification
+php artisan make:model SectorClassification --migration
+php artisan make:controller Admin/SectorClassificationController -r -mSectorClassification
+php artisan make:seeder SectorClassificationTableSeeder
+
+php artisan make:controller API/V1/SectorClassificationController -mSectorClassification --api
+php artisan make:Resource Admin/SectorClassification
+
+php artisan make:Request MassDestroySectorClassification
+php artisan make:Request StoreSectorClassification
+php artisan make:Request UpdateSectorClassification
+php artisan make:Request DeleteSectorClassification
+
+-- Email
+php artisan make:model EmailTemplate --migration
+php artisan make:controller Admin/EmailController
+
+php artisan make:Request StoreEmailTemplate
+php artisan make:Request UpdateEmailTemplate
+
+-- UserAlert
+php artisan make:model UserAlert --migration
+php artisan make:controller Admin/UserAlertController -r -mUserAlert
+--php artisan make:seeder UserAlertTableSeeder
+
+--php artisan make:controller API/V1/UserAlertController -mUserAlert --api
+--php artisan make:Resource Admin/UserAlert
+
+php artisan make:Request MassDestroyUserAlert
+php artisan make:Request StoreUserAlert
+
+-- UserStatus
+php artisan make:model UserStatus --migration
+php artisan make:controller Admin/UserStatusController -r -mUserStatus
+--php artisan make:seeder UserStatusTableSeeder
+
+--php artisan make:controller API/V1/UserAlertController -mUserAlert --api
+--php artisan make:Resource Admin/UserAlert
+
+php artisan make:Request MassDestroyUserAlert
+php artisan make:Request StoreUserAlert
+
+
+-- Messenger
+php artisan make:model QaMessage --migration
+php artisan make:model QaTopic --migration
+php artisan make:controller Admin/MessengerController -r -mQaTopic
+--php artisan make:seeder MessengerTableSeeder
+
+--php artisan make:controller API/V1/MessengerController -mMessenger --api
+--php artisan make:Resource Admin/Messenger
+
+php artisan make:Request QaTopicCreate
+php artisan make:Request QaTopicReply
